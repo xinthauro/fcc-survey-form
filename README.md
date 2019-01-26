@@ -5,5 +5,5 @@ You can see the project page in [freeCodeCamp](https://learn.freecodecamp.org/re
 also you can view it in [codepen](https://codepen.io/xinthauro/full/OadJgg).
 
 ## Screenshots
-![Screenshot](/screenshots/survey-form.jpg)
+![Screenshot](screenshots/survey-form.jpg)
 
