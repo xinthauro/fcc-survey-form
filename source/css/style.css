@@ -1,0 +1,92 @@
+:root {
+    --background-color: #add2c9; 
+    --form-color: #faf9f9;
+    --button-color: #5ea3a3;
+    --button-color-hover: #488b8f;
+    --font-family-main: 'Roboto', sans-serif;
+    --font-family-title: 'Archivo Black', sans-serif;
+    --font-color-dark: black;
+    --font-color-light: white;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family-main);
+    color: var(--font-color-dark);
+}
+
+form {
+    background-color: var(--form-color);
+    padding: 2em;
+    border-radius: 4px;
+}
+
+h1 {
+    font-family: var(--font-family-title);
+    font-size: 2.5em;
+ }
+
+.container {
+    max-width: 720px;
+    margin: 4em auto;
+}
+
+.legend {
+    background-color: var(--button-color-hover);
+    color: var(--font-color-light);
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.fieldset {
+    margin: 16px auto;
+    border: none;
+}
+
+.field-group {
+    margin: 16px auto;
+}
+
+.field-combo {
+    margin: 8px auto;
+}
+
+.field-label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    margin-right: 8px;    
+}
+
+.field-input {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.btn {
+    background-color: var(--button-color);
+    color: var(--font-color-light);
+    width: 30%;
+    margin: 8px auto;
+    padding: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-family: var(--font-family-title);
+}
+
+.btn:hover {
+    background-color: var(--button-color-hover);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-top {
+    vertical-align: top;
+}
+

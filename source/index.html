@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center" id="title">Survey Form</h1>
+        <form id="survey-form">
+            <p class="text-center" id="description">Let us know something more about you in World of Witchcraft</p>
+            <!-- Personal Data -->
+            <fieldset class="fieldset">
+                <legend class="legend text-center">Personal Data</legend>
+                <div class="field-group text-center">
+                    <div class="field-combo">
+                        <label for="name" class="field-label" id="name-label">Name</label>
+                        <input type="text" placeholder="Enter your name" required class="field-input" id="name">
+                    </div>
+                    <div class="field-combo">                
+                        <label for="email" class="field-label" id="email-label">Email</label>
+                        <input type="email" placeholder="Enter your email" required class="field-input" id="email">
+                    </div>
+                    <div class="field-combo">
+                        <label for="number" class="field-label" id="number-label">Age</label>
+                        <input type="number" min="10" max="100" step="1" placeholder="Enter your age" required class="field-input" id="number">
+                    </div>
+                </div>
+                <div class="field-group text-center">
+                    <label class="field-label text-top" for="sex-group">Select your sex</label>
+                        <div class="field-input" id="sex-group">
+                            <div>
+                                <input type="radio" name="sex" value="male" checked id="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="sex" value="female" id="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="sex" value="other" id="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                </div>
+            </fieldset>
+            <!-- Survey -->
+            <fieldset class="fieldset">
+                <legend class="legend text-center">Survey</legend>
+                <div class="field-group text-center">
+                    <label for="dropdown" class="field-label">Select your main class</label>
+                    <select name="dropdown" class="field-input" id="dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option value="class-death-knight">Death Knight</option>
+                        <option value="class-demo-hunter">Demon Hunter</option>
+                        <option value="class-druid">Druid</option>
+                        <option value="class-hunter">Hunter</option>
+                        <option value="class-mage">Mage</option>
+                        <option value="class-monk">Monk</option>
+                        <option value="class-paladin">Paladin</option>
+                        <option value="class-priest">Priest</option>
+                        <option value="class-rogue">Rogue</option>
+                        <option value="class-shaman">Shaman</option>
+                        <option value="class-warlock">Warlock</option>
+                        <option value="class-warrior">Warrior</option>
+                    </select>
+                </div>
+                <div class="field-group text-center">
+                    <label for="rol" class="field-label text-top">Select your favorite rol</label>
+                    <div class="field-input" id="rol">
+                        <div class="">
+                            <input type="checkbox" value="tank" id="rol-tank">
+                            <label for="rol-tank" >Tank</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" value="healer" id="rol-healer">
+                            <label for="rol-healer">Healer</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" value="dps" id="rol-dps">
+                            <label for="rol-dps">DPS</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field-group text-center">
+                    <label for="comments" class="field-label text-top">Leave us any comments</label>
+                    <textarea name="" placeholder="Enter your comment here..." cols="30" rows="4" class="field-input" id="comments"></textarea>
+                </div>
+            </fieldset>
+            <div class="text-center">
+                <button type="submit" class="btn text-center" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
